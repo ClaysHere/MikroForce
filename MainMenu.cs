@@ -4,31 +4,43 @@ using UnityEditor;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic; // Diperlukan untuk List
 
 public class MainMenu : MonoBehaviour
 {
     void Start()
     {
-        Screen.SetResolution(1920, 1080, FullScreenMode.Windowed);
+        Screen.SetResolution(1920, 1080, FullScreenMode.ExclusiveFullScreen);
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Debug.Log("MainMenu Start: Cursor visible and unlocked.");
     }
 
     public void Instructions()
     {
-        SceneManager.LoadSceneAsync(1);
+        Debug.Log("Instructions button pressed. Loading Scene 2.");
+        SceneManager.LoadSceneAsync(2);
     }
 
-    public void Quit()
+    public void QuitGameAndCleanup()
     {
+        Debug.Log("Quit button pressed. Initiating cleanup and exit.");
+
+        // === 3. Keluar dari Aplikasi ===
         if (Application.isEditor)
         {
-            #if UNITY_EDITOR
-                EditorApplication.isPlaying = false; // Stop play mode in the editor
-            #endif
+#if UNITY_EDITOR
+            Debug.Log("Quit: Stopping play mode in editor.");
+            EditorApplication.isPlaying = false;
+#endif
         }
         else
         {
-            Application.Quit(); // Quits the game in the built version
+            Debug.Log("Quit: Calling Application.Quit().");
+            Application.Quit();
+
+            // Log tambahan jika App.Quit() gagal secara internal
+            Debug.LogError("Application.Quit() call did not result in immediate application termination. Check logs for issues.");
         }
     }
 }
