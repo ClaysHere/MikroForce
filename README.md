@@ -19,18 +19,6 @@
 - Menggunakan asset default dan/atau kustom
 - Fokus pada logika gameplay, bukan desain visual tingkat lanjut
 
-//## 📁 Struktur Proyek
-
-//Struktur direktori untuk folder script:
-
-//Scripts/
-//├── PlayerController.cs // Logika pergerakan dan kontrol pemain
-//├── GunController.cs // Logika menembak
-//├── Enemy.cs // Logika musuh statis
-//├── GameManager.cs // Timer, kondisi menang/kalah
-//├── UIManager.cs // Tampilan HUD, timer, musuh tersisa
-
-
 ## 🔄 Status Proyek
 
 Proyek ini masih dalam tahap awal pengembangan dan hanya menyimpan bagian **script** dari game. Struktur project Unity lengkap tidak disertakan dalam repository ini.
