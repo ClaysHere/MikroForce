@@ -19,16 +19,16 @@
 - Menggunakan asset default dan/atau kustom
 - Fokus pada logika gameplay, bukan desain visual tingkat lanjut
 
-## 📁 Struktur Proyek
+//## 📁 Struktur Proyek
 
-Struktur direktori untuk folder script:
+//Struktur direktori untuk folder script:
 
-Scripts/
-├── PlayerController.cs // Logika pergerakan dan kontrol pemain
-├── GunController.cs // Logika menembak
-├── Enemy.cs // Logika musuh statis
-├── GameManager.cs // Timer, kondisi menang/kalah
-├── UIManager.cs // Tampilan HUD, timer, musuh tersisa
+//Scripts/
+//├── PlayerController.cs // Logika pergerakan dan kontrol pemain
+//├── GunController.cs // Logika menembak
+//├── Enemy.cs // Logika musuh statis
+//├── GameManager.cs // Timer, kondisi menang/kalah
+//├── UIManager.cs // Tampilan HUD, timer, musuh tersisa
 
 
 ## 🔄 Status Proyek
