@@ -28,9 +28,9 @@ Proyek ini masih dalam tahap awal pengembangan dan hanya menyimpan bagian **scri
 ## 👨‍💻 Developer
 
 - M. Fikri ([@ClaysHere](https://github.com/ClaysHere))
-- ()
-- ()
-- ()
+- Kenneth Lionggo
+- Justin Kosasi
+- Justine Lim
 
 ---
 
